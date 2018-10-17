@@ -108,16 +108,14 @@ function listDocs(data)
   tableText+="<th>ID</th>"
   tableText+="<th>Doc name</th>"
   tableText+="<th>App title</th>"
-  tableText+="<th>App size</th>"
-  tableText+="<th>Last reload time</th>"
   tableText+="</tr>"
   data.forEach(function(elem){
     tableText += "<tr>"
     tableText +="<td>"+elem.qDocId+"</td>"
     tableText +="<td>"+elem.qDocName+"</td>"
     tableText +="<td>"+elem.qTitle+"</td>"
-    tableText +="<td>"+elem.qFileSize+"</td>"
-    tableText +="<td>"+elem.qLastReloadTime+"</td>"
+    // tableText +="<td>"+elem.qFileSize+"</td>"
+    // tableText +="<td>"+elem.qLastReloadTime+"</td>"
     tableText +="<td><button class='deleteBtn' value='"+elem.qDocId+"'>"+"delete</button></td>"
     tableText += "</tr>"    
   })
