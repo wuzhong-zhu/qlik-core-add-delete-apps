@@ -20,6 +20,7 @@ function initialize(){
     if ($('#isSecure').is(":checked")){
       connectionType = "wss"
     }
+    run()
   })
   $( "#createAppButton" ).click(function() {
     createApp();
